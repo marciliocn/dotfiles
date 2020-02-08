@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 clear
 echo ''
@@ -24,7 +24,7 @@ mkdir -p ~/.config/{bspwm,sxhkd}
 cp /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm
 cp /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd
 chmod +x ~/.config/bspwm/bspwmrc
-sed 's/urxvt/st/' ~/.config/sxhkd
+sed 's/urxvt/st/' ~/.config/sxhkd/sxhkdrc
 echo 'exec bspwm' > ~/.xinitrc
 # Configure bspwm and sxhkd end
 
